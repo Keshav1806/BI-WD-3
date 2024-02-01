@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500;900&family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&family=Ubuntu:wght@700&display=swap');
+
+* {
+    margin: 0px 0px;
+    padding: 0px 0px;
+    box-sizing: border-box;
+    font-family: poppins;
+    color: white;
+}
+
+button {
+    cursor: pointer;
+}
+
+h1 {
+    font-weight: bolder;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.topcontainer {
+    padding: 25px 40px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/header-image.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.navbar img {
+    height: 40px;
+    width: 150px;
+    margin-right: 455px;
+}
+
+.rightnav {
+    display: flex;
+}
+
+.langbut {
+    margin-right: 20px;
+    padding: 4px 15px;
+    border: 1px solid rgba(128, 128, 128, 0.7);
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(22, 22, 22, 0.7);
+    cursor: pointer;
+}
+
+.langbut i {
+    margin-right: 5px;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+}
+
+.langbut select {
+    border: none;
+    font-size: 17px;
+    background: none;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.rightnav button {
+    border: none;
+    background-color: red;
+    color: white;
+    padding: 2px 15px;
+    padding-bottom: 4px;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+.belownav {
+    padding: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.belownav h1 {
+    font-size: 43px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+
+.belownav h3 {
+    font-size: 21px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.getstarted {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.getstarted input {
+    padding: 14px 17px;
+    margin-right: 15px;
+    width: 480px;
+    background: rgba(22, 22, 22, 0.7);
+    border: 1px solid rgba(128, 128, 128, 0.7);
+    font-size: 15px;
+}
+
+.getstarted button {
+    border: none;
+    background-color: red;
+    color: white;
+    font-weight: bolder;
+    padding: 13px 25px;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 215px;
+}
+
+.line {
+    content: "";
+    width: 100%;
+    height: 6px;
+    background: rgb(54, 54, 54);
+}
+
+.container2 {
+    padding: 60px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.incont2left h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.incont2left h3 {
+    font-size: 25px;
+}
+
+.incont2right {
+    position: relative;
+}
+
+.incont2right video {
+    position: absolute;
+    left: 85px;
+    top: 100px;
+    z-index: -1;
+}
+
+.img2 {
+    margin-right: 45px;
+}
+
+.incont2right .vid2 {
+    left: 105px;
+    top: -80px;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 100px;
+}
+
+.faq h1 {
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+.faq ul {
+    list-style: none;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.faq .ques {
+    padding: 20px;
+    width: 100%;
+    background-color: rgb(46, 45, 45);
+    margin: 10px;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.faq .ques:hover {
+    background-color: rgb(66, 66, 66);
+}
+
+.faq h3 {
+    margin-bottom: 15px;
+}
+
+.faq li i {
+    font-size: 40px;
+    transition: all 0.2s;
+}
+
+.faq .ans {
+    
+    width: 100%;
+    background-color: rgb(46, 45, 45);
+    margin: 0 10px;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 0;
+    transition: max-height 0.2s;
+    overflow: hidden;
+    padding:0px 20px;
+}
+ .faq .ques.active + .ans{
+    padding: 20px;
+    max-height: 500px;
+ }
+
+.faq .ques.active i {
+    transform: rotate(45deg);
+}
+
+.footer {
+    padding: 60px 100px;
+}
+
+.footer p u {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(202, 198, 198);
+}
+
+.footer p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(202, 198, 198);
+}
+
+.footer ul {
+    display: grid;
+    grid-template-columns: repeat(4, 40vh);
+    list-style: none;
+}
+
+.footer ul li {
+    margin-bottom: 15px;
+}
+
+.footer ul li a {
+    color: rgb(202, 198, 198);
+    font-size: 15px;
+}
+
+.footer .langbut {
+    width: 10%;
+    margin-top: 10px;
+}
+button{
+    transition: all 0.2s;
+}
+button:hover{
+    background-color: rgb(255, 0, 0, 0.8);
+}
